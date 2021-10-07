@@ -1,0 +1,8 @@
+.idea
+venv
+.env
+docker-compose-dev.yml
+src/project/settings/local.py
+src/logs/*.log
+src/media/*
+!src/media/.empty
