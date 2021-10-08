@@ -3,8 +3,8 @@ version: '2'
 services:
   django:
     build:
-      context: .
-      dockerfile: ./compose/django/Dockerfile
+      context: ..
+      dockerfile: compose/django/Dockerfile
     command: /gunicorn.sh
     depends_on:
       - postgres
@@ -18,9 +18,9 @@ services:
   postgres:
     image: postgres:13.4
     environment:
-      - POSTGRES_USER=project
-      - POSTGRES_PASSWORD=project
-      - POSTGRES_DB=project
+      - POSTGRES_USER={{ cookiecutter.project_name }}
+      - POSTGRES_PASSWORD={{ cookiecutter.project_name }}
+      - POSTGRES_DB={{ cookiecutter.project_name }}
     volumes:
       - postgres:/var/lib/postgresql/data
 

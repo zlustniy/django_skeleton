@@ -1,0 +1,8 @@
+../.idea
+venv
+.env
+docker-compose-dev.yml
+src/{{ cookiecutter.project_name }}/settings/local.py
+src/logs/*.log
+src/media/*
+!src/media/.empty

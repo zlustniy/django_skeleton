@@ -1,0 +1,11 @@
+{
+  "project_name": "project",
+  "project_verbose_name": "Test Project",
+  "organization": "srvhub",
+
+  "_extensions": ["jinja2_git.GitExtension"],
+  "_copy_without_render": [
+    ".venv",
+    "docs/_build"
+  ]
+}
