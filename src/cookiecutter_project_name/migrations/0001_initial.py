@@ -8,7 +8,7 @@ from django.db import migrations, models
 
 
 def create_initial_user(apps, schema_editor):
-    User = apps.get_registered_model('project', 'User')
+    User = apps.get_registered_model('cookiecutter_project_name', 'User')
     User.objects.all().delete()
     User.objects.create(
         username='root',
@@ -20,7 +20,7 @@ def create_initial_user(apps, schema_editor):
 
 
 def delete_initial_user(apps, schema_editor):
-    User = apps.get_registered_model('project', 'User')
+    User = apps.get_registered_model('cookiecutter_project_name', 'User')
     User.objects.filter(username='root').delete()
 
 

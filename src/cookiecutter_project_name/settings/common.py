@@ -34,10 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'project',
+    'cookiecutter_project_name',
 ]
 
-AUTH_USER_MODEL = 'project.User'
+AUTH_USER_MODEL = 'cookiecutter_project_name.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'cookiecutter_project_name.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'cookiecutter_project_name.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -74,9 +74,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('POSTGRES_DB', default='project'),
-        'USER': env('POSTGRES_USER', default='project'),
-        'PASSWORD': env('POSTGRES_PASSWORD', default='project'),
+        'NAME': env('POSTGRES_DB', default='cookiecutter_project_name'),
+        'USER': env('POSTGRES_USER', default='cookiecutter_project_name'),
+        'PASSWORD': env('POSTGRES_PASSWORD', default='cookiecutter_project_name'),
         'HOST': env('POSTGRES_HOST', default='localhost'),
         'PORT': env('POSTGRES_PORT', default=5432),
         'CONN_MAX_AGE': None,
