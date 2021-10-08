@@ -3,9 +3,9 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'project',
-        'USER': 'project',
-        'PASSWORD': 'project',
+        'NAME': '{{ cookiecutter.project_name }}',
+        'USER': '{{ cookiecutter.project_name }}',
+        'PASSWORD': '{{ cookiecutter.project_name }}',
         'HOST': 'localhost',
         'PORT': '5432',
         'CONN_MAX_AGE': None,
