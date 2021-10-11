@@ -43,23 +43,23 @@ Django base project (project)
   ```
 
 3. Создать свой `docker-compose-dev.yml` на основе `docker-compose-dev.yml.example` и запустить.
-4. Создать свой `local.py` на основе `src/project/settings/local.py.example`.
+4. Создать свой `local.py` на основе `src/{project_name}/settings/local.py.example`.
 5. Установить зависимости:
 
   ```shell
-    $ (venv) poetry install --no-root
+    $ (venv) cd src/
+    $ (venv) /src$ poetry install --no-root
   ```
 
 6. Выполнить миграции:
 
   ```shell
-    $ (venv) cd src/
     $ (venv) /src$ python manage.py migrate
   ```
 
-#### Для PyCharm
+### Для PyCharm
 
-1. Создать конфигурацию Django:
+#### 1. Создать конфигурацию Django:
 
 + Add new configuration - Django/Server:
 
@@ -76,7 +76,13 @@ Django base project (project)
      Manage script: manage.py
    ```
 
-2. Создать конфигурацию Celery:
++ Для подсветки синтаксиса:
+
+   ```
+     ПКМ -> src -> Mark Directory as -> Sources Root
+   ```
+
+#### 2. Создать конфигурацию Celery:
 
 + Add new configuration - Python:
 
