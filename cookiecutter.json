@@ -1,6 +1,6 @@
 {
   "project_name": "project",
-  "project_verbose_name": "Test Project",
+  "project_verbose_name": "Описание проекта",
   "organization": "srvhub",
 
   "_extensions": ["jinja2_git.GitExtension"],
