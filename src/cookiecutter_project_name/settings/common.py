@@ -34,8 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'cookiecutter_project_name',
+    'drf_yasg',
     'djnewsletter',
+    'cookiecutter_project_name',
+    'api',
 ]
 
 AUTH_USER_MODEL = 'cookiecutter_project_name.User'
