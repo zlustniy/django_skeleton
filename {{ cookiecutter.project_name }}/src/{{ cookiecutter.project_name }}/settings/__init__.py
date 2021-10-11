@@ -3,6 +3,7 @@ from .logging import *
 from .sentry import *
 from .restframework import *
 from .appversion import *
+from .celery import *
 
 # apps
 

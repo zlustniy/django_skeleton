@@ -34,7 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
+    'drf_yasg',
+    'djnewsletter',
     '{{ cookiecutter.project_name }}',
+    'api',
 ]
 
 AUTH_USER_MODEL = '{{ cookiecutter.project_name }}.User'
@@ -149,6 +152,6 @@ CACHES = {
     },
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'djnewsletter.backends.EmailBackend'
 
 SITE_ID = 1
